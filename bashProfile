@@ -1,0 +1,48 @@
+#watch -n 10 'date' &>/dev/null &
+export PS1_DIR='${PWD/$HOME/\~}'
+export SCRIPT_OUT_DIR=~/dev/script_output/
+
+alias ls='ls --color=always -lh'
+alias lss='ls --color=always -ld $PWD/*'
+alias qwer='source ~/.hidden/DAALPHA'
+alias asdf='source ~/.hidden/DECALPHA'
+alias hgr='history | grep'
+alias bashbash='nano ~/.profile'
+alias bashbashgo='source ~/.profile'
+
+#HDFS Aliases
+alias hd='hdfs dfs'
+alias hls='hdfs dfs -ls'
+alias hlsz='hdfs dfs -ls /zones/epc-cap-da-dev/'
+alias hrm='hdfs dfs -rm -skipTrash'
+alias hmd='hdfs dfs -mkdir'
+alias hrd='hdfs dfs -rm -r -skipTrash'
+
+#Git Aliases
+alias gco='git checkout'
+alias gcl='git clone'
+alias gs='git status'
+alias gp='git pull'
+alias ga='~/.hidden/git_stage.sh'
+alias gaA='git add -A'
+alias gr='ga'
+alias gc='~/.hidden/git_commit.sh'
+alias gpo='~/.hidden/git_push.sh'
+alias gap='ga; gc'
+alias grb='git rebase'
+alias gitqp='echo "add"; git add -A; echo ""; echo "commit"; git commit -m "quick push"; echo ""; echo "push"; git push origin; echo ""; echo "status"; git status'
+alias gtg='sh ~/dev/gitTag.sh'
+
+
+#Kerberos Ticket Renew
+klist
+
+
+
+## TEMPORARY ##
+#export XFER_DIR=edh2
+#export HOME=/
+
+##### END #####
+
+clear
